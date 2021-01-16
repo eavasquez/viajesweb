@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Jekyll v3.8.5">
+
+        <link rel="stylesheet" 
+              href="CSS/carousel.css" >
+        <link rel="stylesheet"
+              href="CSS/bootstrap.min.css" >
+        <link rel="stylesheet"
+              href="CSS/jumbotron.css" >
+        <link href="CSS/navbar.css" rel="stylesheet">
+
+        <script src="JS/jquery-3.3.1.slim.min.js"></script>
+        <script src="JS/bootstrap.bundle.min.js"></script>
+        <script src="JS/regiones.js"></script> 
+  </head>
+
+
+ <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href="#">MENU</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                  <a class="dropdown-item" href="#">Viajes</a>
+                  <a class="dropdown-item" href="#">Hoteles</a>
+                  <a class="dropdown-item" href="#">Seguros</a>
+            </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trabajaconnosotros.html">Trabaja con Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registrarse.html">Registrarse</a>
+                </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Buscar Producto" aria-label="Search">
+            <button class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+  </nav>
+</header>
+
+
+  <div class="container-fluid bg-light">     
+    <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="IMG/logotienda.png"  width="200" height="200">
+        <h2>Formulario de Registro</h2>
+      </div>   
+<div class="container">
+<form action="enviar.php" method="post">    
+<div class="row mx-md-n5 ">    <!-- inicio Primera Fila -->       
+  <div class="col py-5 px-md-5"> 
+    <label for="rut">Rut</label>
+    <input class="form-control" id="rut" type="text" size=40/>
+    <label for="nombres">Nombres</label>
+    <input class="form-control" id="nombres" type="text" size=40/>
+    <label for="apellidos">Apellidos</label>
+    <input class="form-control" id="apellidos" type="text" size=40/>    
+    <label for="telefono">Teléfono</label>
+    <input class="form-control" id="telefono" type="text" size="20"/>    
+    <label for="fechanac">Fecha de Nacimiento</label>
+    <input class="form-control" id="fechanac" type="date" size="20"/>    
+    <label for="correoelectronico">Correo Electrónico</label>
+    <input class="form-control" id="correoelectronico" type="mail" size="20"/>        
+     <hr class="mb-4"> 
+      <h4 class="mb-3">Clave de acceso para la tienda virtual</h4>      
+     <input class="form-control" id="claveacceso1" />    
+    <input class="form-control" id="claveacceso2" />        
+  </div>
+  <div class="col py-5 px-md-5">      
+    <label for="direccion">Dirección</label>
+    <input class="form-control" id="direccion" type="text" size=40/>
+    <label for="regiones">Región</label>
+    <select class="form-control" name="regiones" id="regiones"></select>
+    <label for="comunas">Ciudad</label>
+    <select class="form-control" name="comunas" id="comunas"></select>    
+    <hr class="mb-4">      
+    <h4 class="mb-3">Quiero recibir información de:</h4>
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="vestuario">
+        <label class="custom-control-label" for="vestuario">Pantalones</label>
+    </div>      
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="lineablanca">
+        <label class="custom-control-label" for="lineablanca">Baño</label>
+    </div>
+        <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="muebleria">
+        <label class="custom-control-label" for="muebleria">Living</label>
+    </div>
+        <div class="custom-control custom-checkbox">
+        <input type="checkbox"  class="custom-control-input" id="electronica">
+        <label class="custom-control-label" for="electronica">Computación</label>
+    </div>
+    <hr class="mb-4">      
+      <h4 class="mb-3">Edad</h4>
+      <div class="custom-control custom-radio">
+        <input id="edad1" type="radio" class="custom-control-input" >
+        <label class="custom-control-label" for="edad1">Mayor de 18 y Menor de 30 años</label>
+      </div>
+    <div class="custom-control custom-radio">
+        <input id="edad2" type="radio" class="custom-control-input">
+        <label class="custom-control-label" for="edad2">Entre 30 y 40 años </label>
+     </div>
+    <div class="custom-control custom-radio">
+        <input id="edad3" type="radio" class="custom-control-input">
+        <label class="custom-control-label" for="edad3">Mayor de 40 años</label>
+    </div>
+</div> <!-- Fin Primera Fila -->
+</div>
+<div class="row mx-md-n5"> <!-- inicio Segunda Fila -->   
+
+</div><!-- Fin Segunda Fila -->
+    
+<button class="btn btn-primary btn-lg btn-block" type="submit">Enviar Inscripción Online</button>
+<br>  
+<br>
+</form>
+</div>
+</div>
+
+
+ <footer>
+        <div class="page-footer font-small unique-color-dark">
+          <div style="background-color: #fff;">
+          <div class="container text-center text-md-left mt-5">
+            <div class="row mt-3"> 
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4"> 
+                  <img src="IMG/logotienda.png" width="200">
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"> 
+                <h6 class="text-uppercase font-weight-bold">Redes Sociales</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p><a href="https://www.Facebook.com/">Facebook</a></p>
+                <p><a href="https://www.instragram.com/">Instagram</a></p>
+                <p><a href="https://www.twitter.com/">Twitter</a></p>
+                <p><a href="https://www.traveloften.cl/">Tiendavirtual</a></p>
+              </div>
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Servicios</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p><a href="#!">Servicio al cliente</a></p>
+                <p><a href="#!">Hoteles</a></p>
+                <p><a href="#!">Seguros</a></p>        
+                <p><a href="#!">Viajes</a></p>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">  
+                <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p><i class="fas fa-home mr-3"></i>Concepción, Barros Arana, CL</p>
+                <p><i class="fas fa-envelope mr-3"></i> contacto@traveloften.cl</p>
+                <p><i class="fas fa-phone mr-3"></i> + 56 9 99999999</p>
+                <p><i class="fas fa-print mr-3"></i> + 56 8 88888888</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright text-center py-3">© 2019 Taller de Aplicaciones para Internet</div>
+        </div>
+        </div>
+    </footer>
+</html>
